@@ -14,10 +14,15 @@ export default function Home() {
     }
   };
 
+  const sendToContactApi = () =>{
+    console.log(state);
+  }
   const [state, dispatch] = useReducer(reducer, initialState);
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log(state);
+    
+
+    sendToContactApi()
   };
   return (
     <div>
